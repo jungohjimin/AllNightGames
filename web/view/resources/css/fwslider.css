@@ -96,9 +96,9 @@
 #fwslider .title {  /* Slider Title Style */
 	margin-left:4%;
 	text-transform: capitalize;
-	color: #fff;
+	color: black;
 	font-size:2em;
-	background:rgba(91, 89, 82, 0.4);
+	background:white;
 	padding:5px 20px;
 	float: left;
 	font-style: normal;
@@ -109,9 +109,9 @@
 #fwslider .description { /* Slider Description Style */
 	margin-left:4%;
     opacity: 0;
-    color:#ffffff;
+    color:black;
     font-size:2em;
-    background:rgba(91, 89, 82, 0.4);
+    background:white;
     padding:10px;
     clear:both;
     float:left;
