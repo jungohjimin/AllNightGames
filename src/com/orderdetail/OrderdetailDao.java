@@ -13,7 +13,7 @@ import com.vo.Gproduct;
 import com.vo.Order;
 import com.vo.Orderdetail;
 
-@Repository("orderdao")
+@Repository("orderdetaildao")
 public class OrderdetailDao implements Dao<Integer, Orderdetail> {
 	
 	@Autowired
