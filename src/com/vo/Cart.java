@@ -19,7 +19,7 @@ public class Cart {
 		this.gprice = gprice;
 		this.count = count;
 	}
- 
+
 	public Cart(int gid, String cust_id, String gimgname, String gname, int gprice, int count, Date orderdate) {
 		this.gid = gid;
 		this.cust_id = cust_id;

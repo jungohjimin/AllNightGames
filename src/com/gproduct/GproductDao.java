@@ -24,7 +24,7 @@ public class GproductDao implements Dao<Integer, Gproduct> {
 	public void delete(Integer k) {
 		gm.delete(k);
 	} 
-
+ 
 	@Override
 	public void update(Gproduct v) {
 		gm.update(v);

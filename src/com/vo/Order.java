@@ -10,7 +10,7 @@ public class Order {
 	private int count;
 	private Date orderdate;
 	private String pstatus;
-	 
+	
 	public Order(String cust_id, int totalprice, int count, String pstatus) {
 		this.cust_id = cust_id;
 		this.totalprice = totalprice;

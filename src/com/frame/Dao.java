@@ -9,4 +9,4 @@ public interface Dao<K,V> {
 	public V select(K k);
 	public ArrayList<V> select();
 }
- 
+  

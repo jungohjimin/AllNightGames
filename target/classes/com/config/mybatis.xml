@@ -11,7 +11,7 @@ PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
 		<typeAlias type="com.vo.Orderdetail" alias="orderdetail"/> -->
 	</typeAliases>
 	
-	<mappers> 
+	<mappers>  
 		<mapper resource="com/config/custmapper.xml"/>
 		<!-- <mapper resource="com/config/productmapper.xml"/>
 		<mapper resource="com/config/cartmapper.xml"/>

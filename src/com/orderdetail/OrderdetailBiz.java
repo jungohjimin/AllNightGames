@@ -25,7 +25,7 @@ public class OrderdetailBiz implements Biz<Integer, Orderdetail> {
 	public void remove(Integer k) throws Exception {
 		dao.delete(k);
 	}
- 
+
 	@Override
 	public void modify(Orderdetail v) throws Exception {
 		dao.update(v);

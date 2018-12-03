@@ -28,7 +28,7 @@ public class GproductBiz implements Biz<Integer, Gproduct> {
 
 	@Override
 	public void modify(Gproduct v) throws Exception {
-		dao.update(v); 
+		dao.update(v);
 	}
 
 	@Override

@@ -126,6 +126,5 @@ public class Cust {
 				+ cust_birthdate + ", cust_email=" + cust_email + ", cust_phone=" + cust_phone + ", cust_address="
 				+ cust_address + ", cust_sex=" + cust_sex + ", cust_regdate=" + cust_regdate + "]";
 	}
-
 	
 }

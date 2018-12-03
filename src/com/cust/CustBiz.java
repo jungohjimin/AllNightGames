@@ -19,7 +19,7 @@ public class CustBiz implements Biz<String, Cust> {
 	@Override
 	public void register(Cust v) throws Exception {
 		dao.insert(v);
-	} 
+	}
 
 	@Override
 	public void remove(String k) throws Exception {

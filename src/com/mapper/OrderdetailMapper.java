@@ -13,4 +13,3 @@ public interface OrderdetailMapper {
 	public Object select(Integer obj);
 	public ArrayList<Orderdetail> selectall();
 }
- 

@@ -36,9 +36,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	   <div class="wrap"> 
 			 <div class="cssmenu">
 				<ul>
-					<li class="active"><a href="login.html">Account</a></li> |
-					<li><a href="checkout.html">备概郴开</a></li> |
-					<li><a href="login.html">Log In</a></li> |
+					<li class="active"><a href="login.html">Account</a></li>
+					<li><a href="checkout.html">备概郴开</a></li>
+					<li><a href="view/login.jsp">Log In</a></li>
 					<li><a href="register.html">Sign Up</a></li>
 				</ul>  
 			</div>

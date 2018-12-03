@@ -11,4 +11,3 @@ public interface CartMapper {
 	public Object select(String obj);
 	public ArrayList<Cart> selectall();
 }
- 

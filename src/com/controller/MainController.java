@@ -32,7 +32,7 @@ public class MainController {
 	public String main() {
 		return "main";
 	}
-	
+	 
 	@RequestMapping("/login.ang")
 	public ModelAndView login() {
 		ModelAndView mv = new ModelAndView();

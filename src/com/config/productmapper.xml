@@ -9,7 +9,7 @@ PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
 		<result column="name" property="name"></result>
 	</resultMap>
 
- 
+  
 	<select id="select" parameterType="int" resultType="product">
 		SELECT * FROM TB_PRODUCT WHERE ID=#{id}
 	</select>

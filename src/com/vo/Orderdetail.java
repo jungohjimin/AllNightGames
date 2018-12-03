@@ -8,7 +8,7 @@ public class Orderdetail {
 	private int gprice;
 	private int count;
 	private int gserialnm;
-	 
+	
 	public Orderdetail(int oid, int gid, int gcode, int gprice, int count, int gserialnm) {
 		this.oid = oid;
 		this.gid = gid;
