@@ -24,7 +24,7 @@ public class Cust {
 		this.cust_sex = cust_sex;
 		this.cust_status = cust_status;
 	}
-
+ 
 	public Cust(String cust_id, String cust_name, String cust_birthdate, String cust_email, int cust_phone,
 			String cust_address, String cust_sex, Date cust_regdate, String cust_status) {
 		this.cust_id = cust_id;

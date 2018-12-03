@@ -12,3 +12,4 @@ public interface OrderMapper {
 	public Object select(Integer obj);
 	public ArrayList<Order> selectall();
 }
+ 

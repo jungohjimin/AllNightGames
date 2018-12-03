@@ -20,7 +20,7 @@ public class OrderBiz implements Biz<Integer, Order> {
 	@Override
 	public void register(Order v) throws Exception {
 		dao.insert(v);
-	}
+	} 
 
 	@Override
 	public void remove(Integer k) throws Exception {

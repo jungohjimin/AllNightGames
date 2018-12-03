@@ -20,7 +20,7 @@ public class CustDao implements Dao<String, Cust> {
 		cm.insert(v);
 	}
 
-	@Override
+	@Override 
 	public void delete(String k) {
 		cm.delete(k);
 	}

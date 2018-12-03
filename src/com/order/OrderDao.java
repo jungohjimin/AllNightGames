@@ -20,7 +20,7 @@ public class OrderDao implements Dao<Integer, Order> {
 	@Override
 	public void insert(Order v) {
 		om.insert(v);
-	}
+	} 
 
 	@Override
 	public void delete(Integer k) {

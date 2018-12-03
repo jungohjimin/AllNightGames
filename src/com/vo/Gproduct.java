@@ -12,7 +12,7 @@ public class Gproduct {
 	private MultipartFile mf;
 	
 	public Gproduct() {};
-	
+	 
 	public Gproduct(String gname, int gcode, int gprice, String gimgname, String gcodenm) {
 		this.gname = gname;
 		this.gcode = gcode;

@@ -14,7 +14,7 @@ import com.vo.Gproduct;
 @Service("cartbiz")
 public class CartBiz implements Biz<String, Cart> {
 	
-	@Resource(name="cartdao")
+	@Resource(name="cartdao") 
 	Dao dao;
 
 	@Override

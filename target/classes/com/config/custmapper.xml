@@ -14,7 +14,7 @@ PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
 	<select id="select" parameterType="String" 
 	resultMap="custResult">
 		SELECT * 
-		FROM TB_CUST
+		FROM TB_CUST 
 		WHERE ID = #{obj}
 	</select>
 	<select id="selectall" 

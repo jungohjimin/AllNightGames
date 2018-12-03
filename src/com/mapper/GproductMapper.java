@@ -10,4 +10,4 @@ public interface GproductMapper {
 	public void update(Gproduct obj);
 	public Gproduct select(int obj);
 	public ArrayList<Gproduct> selectall();
-}
+} 

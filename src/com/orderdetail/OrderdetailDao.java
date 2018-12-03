@@ -23,7 +23,7 @@ public class OrderdetailDao implements Dao<Integer, Orderdetail> {
 	public void insert(Orderdetail v) {
 		om.insert(v);
 	}
-
+ 
 	@Override
 	public void delete(Integer k) {
 		om.delete(k);
