@@ -25,7 +25,7 @@ import com.vo.Cust;
 @Controller
 public class MainController {
 	
-	@Resource(name="cbiz")
+	@Resource(name="custbiz")
 	Biz<String, Cust> biz;
 
 	@RequestMapping("/main.ang")

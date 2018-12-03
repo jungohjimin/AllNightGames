@@ -12,7 +12,6 @@ public class Cust {
 	private String cust_address;
 	private String cust_sex;
 	private Date cust_regdate;
-	private String cust_status;
 	
 	public Cust(String cust_name, String cust_birthdate, String cust_email, int cust_phone, String cust_address,
 			String cust_sex, String cust_status) {
@@ -22,11 +21,10 @@ public class Cust {
 		this.cust_phone = cust_phone;
 		this.cust_address = cust_address;
 		this.cust_sex = cust_sex;
-		this.cust_status = cust_status;
 	}
  
 	public Cust(String cust_id, String cust_name, String cust_birthdate, String cust_email, int cust_phone,
-			String cust_address, String cust_sex, Date cust_regdate, String cust_status) {
+			String cust_address, String cust_sex, Date cust_regdate) {
 		this.cust_id = cust_id;
 		this.cust_name = cust_name;
 		this.cust_birthdate = cust_birthdate;
@@ -35,11 +33,10 @@ public class Cust {
 		this.cust_address = cust_address;
 		this.cust_sex = cust_sex;
 		this.cust_regdate = cust_regdate;
-		this.cust_status = cust_status;
 	}
 
 	public Cust(String cust_id, int cust_pw, String cust_name, String cust_birthdate, String cust_email, int cust_phone,
-			String cust_address, String cust_sex, Date cust_regdate, String cust_status) {
+			String cust_address, String cust_sex, Date cust_regdate) {
 		this.cust_id = cust_id;
 		this.cust_pw = cust_pw;
 		this.cust_name = cust_name;
@@ -49,7 +46,6 @@ public class Cust {
 		this.cust_address = cust_address;
 		this.cust_sex = cust_sex;
 		this.cust_regdate = cust_regdate;
-		this.cust_status = cust_status;
 	}
 
 	public String getCust_id() {
@@ -123,24 +119,13 @@ public class Cust {
 	public void setCust_regdate(Date cust_regdate) {
 		this.cust_regdate = cust_regdate;
 	}
-	
-	public String getCust_status() {
-		return cust_status;
-	}
-	
-	public void setCust_status(String cust_status) {
-		this.cust_status = cust_status;
-	}
 
 	@Override
 	public String toString() {
 		return "Cust [cust_id=" + cust_id + ", cust_pw=" + cust_pw + ", cust_name=" + cust_name + ", cust_birthdate="
 				+ cust_birthdate + ", cust_email=" + cust_email + ", cust_phone=" + cust_phone + ", cust_address="
-				+ cust_address + ", cust_sex=" + cust_sex + ", cust_regdate=" + cust_regdate + ", cust_status="
-				+ cust_status + "]";
+				+ cust_address + ", cust_sex=" + cust_sex + ", cust_regdate=" + cust_regdate + "]";
 	}
-
-	
 
 	
 }
