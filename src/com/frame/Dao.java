@@ -8,5 +8,5 @@ public interface Dao<K,V> {
 	public void update(V v);
 	public V select(K k);
 	public ArrayList<V> select();
-}
+} 
   
