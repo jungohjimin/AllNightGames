@@ -6,7 +6,7 @@
    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
-<title>AllNightGames</title>
+<title>AllNightGames</title> 
 <script type="text/javascript"
    src="/AllNightGames/view/resources/js/jquery1.min.js"></script>
 <meta name="viewport"
