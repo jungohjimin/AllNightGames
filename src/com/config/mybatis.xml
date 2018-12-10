@@ -4,19 +4,19 @@ PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.vo.Cust" alias="cust"/>
-	<!-- 	<typeAlias type="com.vo.Gproduct" alias="gproduct"/>
-		<typeAlias type="com.vo.Cart" alias="cart"/>
-		<typeAlias type="com.vo.Order" alias="order"/>
-		<typeAlias type="com.vo.Orderdetail" alias="orderdetail"/> -->
+		<typeAlias type="com.vo.Cust" alias="cust" />
+		<typeAlias type="com.vo.Gproduct" alias="gproduct" />
+		<typeAlias type="com.vo.Orderr" alias="orderr"/>
+		<typeAlias type="com.vo.Cart" alias="cart" />
+		<typeAlias type="com.vo.Orderdetail" alias="orderdetail" /> 
 	</typeAliases>
-	
-	<mappers>  
-		<mapper resource="com/config/custmapper.xml"/>
-		<!-- <mapper resource="com/config/productmapper.xml"/>
-		<mapper resource="com/config/cartmapper.xml"/>
+
+	<mappers>
+		<mapper resource="com/config/custmapper.xml" />
+		<mapper resource="com/config/productmapper.xml" />
 		<mapper resource="com/config/ordermapper.xml"/>
-		<mapper resource="com/config/orderdetailmapper.xml"/> -->
+		<mapper resource="com/config/cartmapper.xml" />
+		<mapper resource="com/config/orderdetailmapper.xml" />
 	</mappers>
 </configuration>
 

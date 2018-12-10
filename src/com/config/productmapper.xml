@@ -2,32 +2,39 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.mapper.ProductMapper">
-	
-	<resultMap type="product" id="userResult" >
-		<result column="id" property="id"></result>
-		<result column="name" property="name"></result>
-	</resultMap>
+<mapper namespace="com.mapper.GproductMapper">
+   
+   <resultMap type="gproduct" id="userResult" >
+      <result column="gid" property="gid"></result>
+      <result column="gname" property="gname"></result>
+      <result column="gcode" property="gcode"></result>
+      <result column="gcodenm" property="gcodenm"></result>
+      <result column="gprice" property="gprice"></result>
+      <result column="gimgname" property="gimgname"></result>
+      <result column="gdetail" property="gdetail"></result>
+   </resultMap>
 
   
-	<select id="select" parameterType="int" resultType="product">
-		SELECT * FROM TB_PRODUCT WHERE ID=#{id}
-	</select>
-	<select id="selectall" resultType="product">
-		SELECT * FROM TB_PRODUCT
-	</select>
-	<insert id="insert" parameterType="product">
-		INSERT INTO TB_PRODUCT VALUES (PRO_SEQ.NEXTVAL,#{name},#{price},SYSDATE,#{imgname})
-	</insert>
-	<update id="update" parameterType="product">
-		UPDATE TB_PRODUCT SET NAME=#{name},PRICE=#{price}, IMGNAME=#{imgname} WHERE ID=#{id}
-	</update>
-	<delete id="delete" parameterType="int">
-		DELETE FROM TB_PRODUCT WHERE ID=#{id}
-	</delete>
-	
+   <select id="select" parameterType="int" resultType="gproduct">
+      SELECT * FROM TB_GPRODUCT WHERE GID=#{gid}
+   </select>
+   <select id="selectgcode" parameterType="String" resultType="gproduct">
+      SELECT * FROM TB_GPRODUCT WHERE GCODENM=#{gcodenm}
+   </select>
+   <select id="selectall" resultType="gproduct">
+      SELECT * FROM TB_GPRODUCT
+   </select>
+   <insert id="insert" parameterType="gproduct">
+      INSERT INTO TB_GPRODUCT VALUES (PRO_SEQ.NEXTVAL,#{name},#{price},SYSDATE,#{imgname})
+   </insert>
+   <update id="update" parameterType="gproduct">
+      UPDATE TB_GPRODUCT SET NAME=#{name},PRICE=#{price}, IMGNAME=#{imgname} WHERE ID=#{id}
+   </update>
+   <delete id="delete" parameterType="int">
+      DELETE FROM TB_GPRODUCT WHERE ID=#{id}
+   </delete>
+   
 </mapper>
-
 
 
 

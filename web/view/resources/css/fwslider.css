@@ -19,12 +19,9 @@
 }
 
 #fwslider .slidePrev {
-   
-   
     position: absolute;
     top:50%;
     left:-50px;
-    
     z-index: 10;
 }
 
@@ -96,9 +93,9 @@
 #fwslider .title {  /* Slider Title Style */
 	margin-left:4%;
 	text-transform: capitalize;
-	color: black;
+	color: #fff;
 	font-size:2em;
-	background:white;
+	background:rgba(91, 89, 82, 0.4);
 	padding:5px 20px;
 	float: left;
 	font-style: normal;
@@ -109,9 +106,9 @@
 #fwslider .description { /* Slider Description Style */
 	margin-left:4%;
     opacity: 0;
-    color:black;
+    color:#ffffff;
     font-size:2em;
-    background:white;
+    background:rgba(91, 89, 82, 0.4);
     padding:10px;
     clear:both;
     float:left;

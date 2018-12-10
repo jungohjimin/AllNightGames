@@ -6,11 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.frame.Dao;
-import com.mapper.GproductMapper;
-import com.mapper.OrderMapper;
 import com.mapper.OrderdetailMapper;
-import com.vo.Gproduct;
-import com.vo.Order;
 import com.vo.Orderdetail;
 
 @Repository("orderdetaildao")

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.OrderdetailMapper">
+ 
+	<resultMap type="orderdetail" id="orderdetailResult">
+		<result column="odid" property="odid"/>
+		<result column="oid" property="oid"/>
+		<result column="gid" property="gid"/>
+		<result column="gcode" property="gcode"/>
+		<result column="gprice" property="gprice"/>
+		<result column="count" property="count"/>
+		<result column="gserialnm" property="gserialnm"/>
+	</resultMap>
+	
+	
+	<select id="select" parameterType="Integer" 
+	resultMap="orderdetailResult">
+		SELECT * 
+		FROM TB_ORDERDETAIL
+		WHERE OID= #{oid}
+	</select>
+	
+	
+	<select id="selectall" 
+	resultMap="orderdetailResult">
+		SELECT * 
+		FROM TB_ORDERDETAIL
+	</select>
+	<insert id="insert" parameterType="orderdetail">
+		INSERT INTO TB_ORDERDETAIL VALUES (ORDERDETAIL_SEQ.NEXTVAL, #{oid}, #{gid}, #{gcode},#{gprice},#{count},#{gserialnm})
+	</insert>
+	<update id="update" parameterType="orderdetail">
+		UPDATE TB_ORDERDETAIL SET GSERIALNM=#{gserialnm} WHERE ODID=#{odid}
+	</update>
+	<delete id="delete" parameterType="Integer">
+		DELETE FROM TB_ORDERDETAIL WHERE OID=#{oid}
+	</delete>
+	
+</mapper>
+
+
+
+
+
+

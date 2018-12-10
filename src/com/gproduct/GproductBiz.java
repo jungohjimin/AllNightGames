@@ -40,5 +40,6 @@ public class GproductBiz implements Biz<Integer, Gproduct> {
 	public ArrayList<Gproduct> get() throws Exception {
 		return dao.select();
 	}
+	
 
 }

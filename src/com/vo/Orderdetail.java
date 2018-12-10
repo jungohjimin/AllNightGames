@@ -9,6 +9,17 @@ public class Orderdetail {
 	private int count;
 	private int gserialnm;
 	
+	
+	
+	public Orderdetail(int gid, int gcode, int gprice, int count, int gserialnm) {
+		super();
+		this.gid = gid;
+		this.gcode = gcode;
+		this.gprice = gprice;
+		this.count = count;
+		this.gserialnm = gserialnm;
+	}
+
 	public Orderdetail(int oid, int gid, int gcode, int gprice, int count, int gserialnm) {
 		this.oid = oid;
 		this.gid = gid;
@@ -27,6 +38,7 @@ public class Orderdetail {
 		this.count = count;
 		this.gserialnm = gserialnm;
 	}
+	public Orderdetail() {}
 
 	public int getOdid() {
 		return odid;

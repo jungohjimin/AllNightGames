@@ -2,13 +2,12 @@ package com.mapper;
 
 import java.util.ArrayList;
 
-import com.vo.Cart;
-import com.vo.Order;
+import com.vo.Orderr;
 
 public interface OrderMapper {
-	public void insert(Order obj);
-	public void delete(Integer obj);
-	public void update(Order obj);
-	public Object select(Integer obj);
-	public ArrayList<Order> selectall();
+	public void insert(Orderr obj);
+	public void delete(int obj);
+	public void update(Orderr obj);
+	public Object select(int obj);
+	public ArrayList<Orderr> selectall();
 }

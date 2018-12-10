@@ -6,13 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.frame.Dao;
+import com.frame.Removedao;
 import com.mapper.CartMapper;
 import com.mapper.GproductMapper;
 import com.vo.Cart;
 import com.vo.Gproduct;
 
 @Repository("cartdao")
-public class CartDao implements Dao<String, Cart> {
+public class CartDao implements Dao<String, Cart>, Removedao<String, Cart> {
 	
 	@Autowired
 	CartMapper cm;
@@ -25,6 +26,11 @@ public class CartDao implements Dao<String, Cart> {
 	@Override
 	public void delete(String k) {
 		cm.delete(k);
+	}
+	
+	@Override
+	public void deletereal(Cart v) {
+		cm.deletereal(v);
 	}
 
 	@Override

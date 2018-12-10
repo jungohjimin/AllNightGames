@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.OrderMapper">
+ 
+	<resultMap type="orderr" id="orderResult">
+		<result column="oid" property="oid"/>
+		<result column="cust_id" property="cust_id"/>
+		<result column="totalprice" property="totalprice"/>
+		<result column="orderdate" property="orderdate"/>
+		<result column="pstatus" property="pstatus"/>
+		<result column="count" property="count"/>
+	</resultMap>
+	
+	
+	<select id="select" parameterType="Integer" 
+	resultMap="orderResult">
+		SELECT * 
+		FROM TB_ORDER 
+		WHERE OID= #{oid}
+	</select>
+	
+	
+	<select id="selectall" 
+	resultMap="orderResult">
+		SELECT * 
+		FROM TB_ORDER
+	</select>
+	<insert id="insert" parameterType="orderr">
+		INSERT INTO TB_ORDER VALUES (ORDER_SEQ.NEXTVAL,#{cust_id},#{totalprice},SYSDATE,#{pstatus},#{count})
+	</insert>
+	<update id="update" parameterType="orderr">
+		UPDATE TB_ORDER SET PSTATUS=#{pstatus} WHERE OID=#{oid}
+	</update>
+	<delete id="delete" parameterType="Integer">
+		DELETE FROM TB_ORDER WHERE OID=#{oid}
+	</delete>
+	<select id="max" parameterType="Integer">
+		SELECT LAST_NUMBER  FROM USER_SEQUENCES WHERE SEQUENCE_NAME = 'ORDER_SEQ'
+	</select> 
+	
+</mapper>
+
+
+
+
+
+

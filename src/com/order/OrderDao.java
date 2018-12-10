@@ -9,16 +9,16 @@ import com.frame.Dao;
 import com.mapper.GproductMapper;
 import com.mapper.OrderMapper;
 import com.vo.Gproduct;
-import com.vo.Order;
+import com.vo.Orderr;
 
 @Repository("orderdao")
-public class OrderDao implements Dao<Integer, Order> {
+public class OrderDao implements Dao<Integer, Orderr> {
 	
 	@Autowired
 	OrderMapper om;
 
 	@Override
-	public void insert(Order v) {
+	public void insert(Orderr v) {
 		om.insert(v);
 	}
 
@@ -28,17 +28,18 @@ public class OrderDao implements Dao<Integer, Order> {
 	}
 
 	@Override
-	public void update(Order v) {
+	public void update(Orderr v) {
 		om.update(v);
 	}
 
 	@Override
-	public Order select(Integer k) {
-		return (Order) om.select(k);
+	public Orderr select(Integer k) {
+		return (Orderr) om.select(k);
 	}
+	
 
 	@Override
-	public ArrayList<Order> select() {
+	public ArrayList<Orderr> select() {
 		return om.selectall();
 	}
 

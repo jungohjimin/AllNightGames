@@ -9,7 +9,9 @@ public class Gproduct {
 	private int gprice;
 	private String gimgname;
 	private String gcodenm;
-	private MultipartFile mf;
+	private String gdetail;
+	
+	public MultipartFile mf;
 	
 	public Gproduct() {};
 	
@@ -32,6 +34,14 @@ public class Gproduct {
 
 	public MultipartFile getMf() {
 		return mf;
+	}
+	
+	public String getGdetail() {
+		return gdetail;
+	}
+
+	public void setGdetail(String gdetail) {
+		this.gdetail = gdetail;
 	}
 
 	public void setMf(MultipartFile mf) {

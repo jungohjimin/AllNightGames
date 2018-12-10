@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Cust {
 	private String cust_id;
-	private int cust_pw;
+	private String cust_pw;
 	private String cust_name;
 	private String cust_birthdate;
 	private String cust_email;
@@ -13,8 +13,13 @@ public class Cust {
 	private String cust_sex;
 	private Date cust_regdate;
 	
-	public Cust(String cust_name, String cust_birthdate, String cust_email, int cust_phone, String cust_address,
-			String cust_sex, String cust_status) {
+	public Cust() {}
+	
+	
+	public Cust(String cust_id, String cust_pw, String cust_name, String cust_birthdate, String cust_email,
+			int cust_phone, String cust_address, String cust_sex) {
+		this.cust_id = cust_id;
+		this.cust_pw = cust_pw;
 		this.cust_name = cust_name;
 		this.cust_birthdate = cust_birthdate;
 		this.cust_email = cust_email;
@@ -22,7 +27,7 @@ public class Cust {
 		this.cust_address = cust_address;
 		this.cust_sex = cust_sex;
 	}
- 
+
 	public Cust(String cust_id, String cust_name, String cust_birthdate, String cust_email, int cust_phone,
 			String cust_address, String cust_sex, Date cust_regdate) {
 		this.cust_id = cust_id;
@@ -35,7 +40,7 @@ public class Cust {
 		this.cust_regdate = cust_regdate;
 	}
 
-	public Cust(String cust_id, int cust_pw, String cust_name, String cust_birthdate, String cust_email, int cust_phone,
+	public Cust(String cust_id, String cust_pw, String cust_name, String cust_birthdate, String cust_email, int cust_phone,
 			String cust_address, String cust_sex, Date cust_regdate) {
 		this.cust_id = cust_id;
 		this.cust_pw = cust_pw;
@@ -56,11 +61,11 @@ public class Cust {
 		this.cust_id = cust_id;
 	}
 	
-	public int getCust_pw() {
+	public String getCust_pw() {
 		return cust_pw;
 	}
 	
-	public void setCust_pw(int cust_pw) {
+	public void setCust_pw(String cust_pw) {
 		this.cust_pw = cust_pw;
 	}
 	

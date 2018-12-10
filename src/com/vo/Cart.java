@@ -11,6 +11,8 @@ public class Cart {
 	private int count;
 	private Date orderdate;
 
+	public Cart() {}
+
 	public Cart(int gid, String cust_id, String gimgname, String gname, int gprice, int count) {
 		this.gid = gid;
 		this.cust_id = cust_id;

@@ -9,16 +9,16 @@ import org.springframework.stereotype.Service;
 import com.frame.Biz;
 import com.frame.Dao;
 import com.vo.Gproduct;
-import com.vo.Order;
+import com.vo.Orderr;
 
 @Service("orderbiz")
-public class OrderBiz implements Biz<Integer, Order> {
+public class OrderBiz implements Biz<Integer, Orderr> {
 	
 	@Resource(name="orderdao")
 	Dao dao;
 
 	@Override
-	public void register(Order v) throws Exception {
+	public void register(Orderr v) throws Exception {
 		dao.insert(v);
 	}
 
@@ -28,17 +28,17 @@ public class OrderBiz implements Biz<Integer, Order> {
 	}
 
 	@Override
-	public void modify(Order v) throws Exception {
+	public void modify(Orderr v) throws Exception {
 		dao.update(v);
 	}
 
 	@Override
-	public Order get(Integer k) throws Exception {
-		return (Order) dao.select(k);
+	public Orderr get(Integer k) throws Exception {
+		return (Orderr) dao.select(k);
 	}
 
 	@Override
-	public ArrayList<Order> get() throws Exception {
+	public ArrayList<Orderr> get() throws Exception {
 		return dao.select();
 	}
 
